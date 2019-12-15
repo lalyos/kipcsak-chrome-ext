@@ -1,0 +1,14 @@
+{
+  "name": "Kipcsakify",
+  "version": "1.1",
+  "description": "Translate to kipcsak",
+  "permissions": ["declarativeContent", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.index.hu/*","https://*.444.hu/*"],
+      "run_at": "document_start",
+      "js": ["contentScript.js"]
+    }
+  ],
+  "manifest_version": 2
+}
